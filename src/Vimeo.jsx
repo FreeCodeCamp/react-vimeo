@@ -16,9 +16,9 @@ const playerEvents = keyMirror({
   play: null,
   progress: null,
   seeked: null,
-  textTrackChange: null,
-  timeUpdate: null,
-  volumeChange: null
+  texttrackchange: null,
+  timeupdate: null,
+  volumechange: null
 });
 
 function capitalize(str = '') {
@@ -59,9 +59,9 @@ export default React.createClass({
     onProgress: PropTypes.func,
     onReady: PropTypes.func,
     onSeeked: PropTypes.func,
-    onTextTrackChanged: PropTypes.func,
-    onTimeUpdate: PropTypes.func,
-    onVolumeChange: PropTypes.func
+    onTexttrackchanged: PropTypes.func,
+    onTimeupdate: PropTypes.func,
+    onVolumechange: PropTypes.func
   },
 
   getDefaultProps() {
